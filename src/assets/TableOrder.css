@@ -1,0 +1,10 @@
+.grid-admin-orders{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.order-table-list-container{
+    width: 49%;
+}

@@ -1,0 +1,176 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.user-profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  background: #003366; /* Color azul de fondo */
+  color: white;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+}
+
+.profile-title {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.profile-title h2 {
+  margin: 0;
+}
+
+.university-logo {
+  max-height: 40px;
+}
+
+.university-logo img {
+  max-height: 40px;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  border-radius: 0 0 10px 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.profile-details h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.profile-details p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.profile-actions {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-button {
+  background: #ff7f00; /* Naranja */
+  border: none;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 200px;
+  max-height: 95px;
+  transition: background 0.3s ease; /* Agregar transición para efecto interactivo */
+}
+
+.action-button:hover {
+  background: #ff9500; /* Cambiar color al pasar el cursor */
+}
+
+.action-button.logout {
+  background: #ff0000; /* Rojo */
+}
+
+.action-button.logout:hover {
+  background: #f94444; /* Cambiar color al pasar el cursor */
+}
+
+.back-button {
+  display: block;
+  background: #003366; /* Azul */
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 20px auto 0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 150px;
+  text-align: center;
+  transition: background 0.3s ease; /* Agregar transición para efecto interactivo */
+}
+
+.back-button:hover {
+  background: #004080; /* Cambiar color al pasar el cursor */
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .profile-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .profile-info, .profile-actions {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .profile-picture img {
+      width: 60px;
+      height: 60px;
+  }
+
+  .action-button {
+      width: 100%;
+      text-align: center;
+  }
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 480px) {
+  .profile-header, .back-button {
+      text-align: center;
+  }
+}

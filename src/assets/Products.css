@@ -1,0 +1,168 @@
+/* Products.css */
+
+.products-page {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  position: relative; /* Añadir esto */
+  padding-bottom: 80px; /* Aumentar el padding inferior para espacio del botón */
+  
+
+}
+
+.products-page body, .products-page html {
+  margin: 0;
+  padding: 0;
+}
+
+.products-header {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: #6e757d;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.search-bar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 50%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.user-icon img {
+  height: 30px;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 80px; 
+}
+
+.product-info {
+  text-transform: capitalize;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  padding: 1rem;
+  text-align: center;
+  row-gap: 300px ;
+  flex: 1 0 33.33%; /* Esto hará que los elementos ocupen un tercio del ancho total, permitiendo que se muestren tres en una fila */
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.add-to-cart {
+  background-color: #ff7f00;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  bottom: 10px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #143b8f;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 35px;
+  margin: auto;
+  position: absolute;
+  bottom: 20px;
+}
+
+.back-button {
+  
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  bottom: 20px ;
+
+
+}
+
+.back-button:hover {
+  background-color: #004080;
+}
+
+.cart-button {
+  background-color: #ff7f00;
+  color: white;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cart-button:hover {
+  background-color: #ff9500;
+}
+
+
+@media (max-width: 600px) {
+  .product-card {
+    flex: 1 0 50%; /* Esto hará que los elementos ocupen la mitad del ancho total, permitiendo que se muestren dos en una fila */
+  }
+}

@@ -1,0 +1,11 @@
+Manual de instalación
+Para ingresar a la página web el usuario, sea cual sea su rol, deberá de ingresar escribiendo en el navegador de preferencia el siguiente enlace URL https://micro2-latiendita.firebaseapp.com/ El cual lo llevará al landing page de “La tiendita”.
+Usuarios:
+Deberán registrarse para acceder al sistema y así encontrar información de los productos de la tienda, los cuales podra adquirir. Todas estas funcionalidades serán posibles para cualquier usuario que se registre en el sistema tanto como por correo electrónico y contraseña como por Google. Para poder realizar este registro, se sugiere revisar en el apartado de “Manual de Usuario” de este entregable, este apartado demuestra de manera secuencial todos los pasos necesarios para realizar esta acción.
+Administradores:
+Son aquellos usuarios que tienen la posibilidad de crear, modificar y eliminar productos. Para la creación del perfil de administrador se deberá de enviar un mensaje al equipo de desarrolladores para ellos dar acceso a la vista de administrador con las funciones mencionadas anteriormente.
+Personal de mantenimiento:
+El personal de mantenimiento deberá descargar el programa para poder operarlo. Para ello tendrán que ingresar al repositorio de github a través del siguiente enlace https://github.com/Yangel275/Microproyecto2---Equipo-1.git. Con este enlace la persona podrá clonar el repositorio para así realizar las modificaciones que considere pertinentes. Adicionalmente, para ver los cambios que se vayan a realizar, este tendrá que seguir una serie de pasos:
+1. Instalar las dependencias de npm, firebase, react-router-dom y react. Al descargar estas dependencias, se creará la carpeta de node_modules. Para instalarlo uno se debe de abrir el cmd en la carpeta del proyecto y escribir “npm install”, “npm install firebase”, “npm install react-router-dom”, “npm install react” , “npm install paypal-button-v2” y “npm install @fortawesome/fontawesome-free”.
+2. Para que se vean los cambios en la página se deberá de realizar push al repositorio del remoto, en la branch main, ya que el deploy está enlazado a él.
+3. Para guardar a un administrador se deberá de crear un usuario directamente en firebase ingresando los datos de manera manual en la colección de “users”

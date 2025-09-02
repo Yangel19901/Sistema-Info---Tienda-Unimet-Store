@@ -1,0 +1,41 @@
+Estructura de los datos:
+
+
+User:
+key: email
+
+Campos =>
+{
+name: "",
+lastname: "",
+phone: "",
+id: "", (carnet)
+email: "",
+admin: true or false 
+}
+
+
+Menu:
+key: name+price
+
+Campos =>
+{
+name: "",
+available: true or false,
+price: "",
+description: ""
+}
+
+
+Order:
+key: orderNumber
+
+Campos =>
+{
+complete: true or false,
+orderNumber: "", (secuencial. Obtener todas las ordenes, detectar el numero mayor y añadir +1 para tener el numero de orden)
+total: "", (price)
+user: "" (email)
+direction: ""
+products: [Name description "X"quantity, Name description "X"quantity, Name description "X"quantity]
+}

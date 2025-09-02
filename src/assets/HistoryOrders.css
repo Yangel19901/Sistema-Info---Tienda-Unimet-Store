@@ -1,0 +1,23 @@
+.Table-History-Order {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Table-History-Order td,
+th {
+  border-bottom: 3px solid #b4b4b463;
+  
+}
+
+.table-rows {
+  text-align: center;
+  height: 30px;
+}
+
+.btn-complete-order {
+  max-width: 20px;
+  max-height: 20px;
+  background-color: #2cd434c5;
+  margin: 1px;
+  border-radius: 0px;
+}
